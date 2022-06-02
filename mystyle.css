@@ -26,6 +26,10 @@ body {
 
 /* general style */
 }
+a {
+    color: white;
+    text-decoration: none; 
+}
 div { 
     margin: 0 3% 0 0;
 }
@@ -230,7 +234,7 @@ h2 {
 /* Flex Columns "B" 1 & 2 ---- Not used today */
 .flex-col-2 { 
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     align-items: top;
     justify-content: center;
     overflow: hidden;
@@ -253,8 +257,7 @@ h2 {
 .b-sub-1 {
     flex: 1 1 0%;
     display: flex;
-    margin-left: 3%;
-    margin-top: 3%;
+    margin: 1% 8% 3% 8%;
     padding-right: 1%;
     border-radius: 8px;
     backdrop-filter: blur(20px);
@@ -267,8 +270,7 @@ h2 {
 .b-sub-2 { 
     flex: 2.3 1 0% !important;
     display: flex;
-    margin-right: 3%;
-    margin-top: 3%;
+    margin: 3% 20% 0% 20%;
     padding-left: 0%;
     border-radius: 8px;
     backdrop-filter: blur(20px);
@@ -327,6 +329,7 @@ h2 {
     background: linear-gradient(90deg, #263547 70%, #000 100%);
     margin-left: 7%;
     margin-right: 0% !important;
+    margin-bottom: 2%;
     color: white;
 }  
 
@@ -348,15 +351,37 @@ h2 {
     margin: 0%;
     gap: 5%;
 }
-.bottom-bar {
-    margin: 3% 0% 0% 0%;
+.img-icon {
+    vertical-align: bottom;
+}
+
+.btn-email,  .btn-linkedin, .btn-github{
+    list-style-type: none;
+    border-radius: 8px;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 100vw;  
-    position: center;
-   
+    border: 1px solid rgba(255, 255, 255, 0.3);    
+    background: linear-gradient(75deg, white 10%, #263547 14%, #000 100%);
+    margin: 2% 5% 2% 0%;
+    padding: 2% 0% 2% 2%;
+    color: white;
+}
+
+.btn-email {
+    list-style-type: none;
+}
+
+.btn-linkedin {
+    list-style-type: none;
+}
+
+.btn-github {
+    list-style-type: none;
+}
+
+.ul-contact-me {
+    padding-left: 5%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -381,11 +406,11 @@ h2 {
         flex: 1;
         margin-left: 3%;
         margin-top:  3%;
+        margin: 3% 3% 3% 3%;
     }
     .b-sub-2 {
         flex: 1;
-        margin-left: 3%;
-        margin-top:  3%;       
+        margin: 3% 3% 3% 3%;      
     }
     
     .b-sub-1 {
